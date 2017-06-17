@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace VariableNoOfArgument
 {
+    class VariableClass
+    {
+
+
+
+
+    }
     class Program
     {
         static void Main(string[] args)
