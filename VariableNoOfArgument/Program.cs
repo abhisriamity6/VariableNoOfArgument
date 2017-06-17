@@ -28,6 +28,19 @@ namespace VariableNoOfArgument
             return min;
         }
 
+        public int getmax(params int[] numbers)
+        {
+            max = numbers[0];
+            for (int i = 1; i < numbers.Length; i++)
+            {
+
+                if (numbers[i] > max)
+                {
+                    max = numbers[i];
+                }
+            }
+            return max;
+        }
 
 
     }
@@ -45,7 +58,9 @@ namespace VariableNoOfArgument
                 int arrelement = int.Parse(Console.ReadLine());
                 array[i] = arrelement;
             }
-         Console.WriteLine("Minimum Value is {0} ", varclass.getmin(array));
+            Console.WriteLine("Minimum Value is {0} ", varclass.getmin(array));
+            Console.WriteLine("Maximum Value is {0} ", varclass.getmax(array));
+
             Console.Read();
         }
     }
